@@ -27,11 +27,11 @@ public class Factorial {
 	 * @param num
 	 * @return
 	 */
-	private float calculatep(int num) {
+	private long calculatep(long num) {
 		if (num < 1) {
 			return -1;
 		} else if (num > 1) {
-			return (float) (Math.log(num) + calculatep(num - 1));
+			return (long) (Math.log(num) + calculatep(num - 1));
 		}
 		return 0;
 	}
