@@ -27,13 +27,13 @@ public class Factorial {
 	 * @param num
 	 * @return
 	 */
-	private float calculatep(int num) {
+	private double calculatep(int num) {
 		if (num < 1) {
 			return -1;
 		} else if (num > 1) {
-			float result = (float) (Math.log(num) + calculatep(num - 1));
-			//System.out.printf("At num %d, getting %f\n",num,result);
-			return (float) result ;
+			double result = (float) (Math.log(num) + calculatep(num - 1));
+			System.out.printf("At num %d, getting %f: %d\n",num,result, (long)Math.exp(result));
+			return (double) result ;
 		}
 		return 0;
 	}
